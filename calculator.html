@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><h1>Calculator:</h1></title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  </head>
+  <body>
+    <py-script>
+        import time
+        a = int(input("Choose an augend/minuend/factor/dividend."))
+        o = str(input("Choose an operator."))
+        b = int(input("Choose a addend/subtrahand/factor/divisor."))
+        if o == "+":
+            time.sleep(3)
+            print(a + b)
+        elif o == "-":
+            time.sleep(3)
+            print(a - b)
+        elif o == "x":
+            time.sleep(3)
+            print(a * b)
+        elif o == "/":
+            time.sleep(3)
+            print(a / b)
+        elif o == "R":
+            time.sleep(3)
+            print(a % b)
+        elif o == "^":
+            time.sleep(3)
+            print(a ** b)
+        elif o == "~/":
+            time.sleep(3)
+            print("Your quotient rounded down is " + (a // b))
+        elif (o != str) or (a or b != int or float) or (a and b != int or float):
+            print("Error - Needs to be a whole number or a decimal.")
+        else:
+            time.sleep(3)
+            exit()
+    </py-script>
+  </body>
+</html>
